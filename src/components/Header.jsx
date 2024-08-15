@@ -92,6 +92,7 @@ const Header = () => {
     <header style={headerStyle} id="header">
       <nav style={navStyle}>
         <a
+          href='#home'
           style={navLogoStyle}
           onMouseEnter={() => setHoveredLink('home')}
           onMouseLeave={() => setHoveredLink(null)}

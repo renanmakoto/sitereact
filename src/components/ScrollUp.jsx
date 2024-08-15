@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react'
-
 import { FaArrowUp } from 'react-icons/fa'
 
 const ScrollUp = () => {
   const [showScroll, setShowScroll] = useState(false)
 
   const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 300){
+    if (!showScroll && window.pageYOffset > 300) {
       setShowScroll(true)
-    } else if (showScroll && window.pageYOffset <= 300){
+    } else if (showScroll && window.pageYOffset <= 300) {
       setShowScroll(false)
     }
   }
@@ -20,7 +19,7 @@ const ScrollUp = () => {
   useEffect(() => {
     window.addEventListener('scroll', checkScrollTop)
     return () => window.removeEventListener('scroll', checkScrollTop)
-  }, [showScroll])
+  }, [checkScrollTop])
 
   const scrollUpStyle = {
     position: 'fixed',
@@ -33,12 +32,12 @@ const ScrollUp = () => {
     cursor: 'pointer',
     transition: 'opacity 0.3s ease-in-out',
     opacity: showScroll ? '1' : '0',
-    pointerEvents: showScroll ? 'auto' : 'none',
+    pointerEvents: showScroll ? 'auto' : 'none'
   }
 
   const iconStyle = {
     color: '#fff',
-    fontSize: '1rem',
+    fontSize: '1rem'
   }
 
   return (
