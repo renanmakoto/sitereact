@@ -27,7 +27,7 @@ const Footer = () => {
     fontSize: '1.5rem',
     fontWeight: 700,
     marginBottom: '0.5rem',
-    fontFamily: '"Poppins", sans-serif'
+    fontFamily: '"Ubuntu", sans-serif'
   }
 
   const subtitleStyle = {
@@ -55,7 +55,7 @@ const Footer = () => {
   }
 
   const socialLinkHoverStyle = {
-    color: '#FBFBFE'
+    color: '#005954'
   }
 
   const footerCopyStyle = {
