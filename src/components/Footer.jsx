@@ -1,11 +1,8 @@
 import React from 'react'
-
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
 const Footer = () => {
-
   const footerStyle = {
-    width: '100%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -13,58 +10,59 @@ const Footer = () => {
     padding: '2rem 1rem',
     backgroundColor: '#00ADA2',
     textAlign: 'center',
-    color: '#FFFFFF',
-    boxSizing: 'border-box',
+    color: '#FFFFFF'
   }
 
   const footerContainerStyle = {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    maxWidth: '1200px',
-    marginBottom: '2rem',
+    justifyContent: 'space-between',
     width: '100%',
+    maxWidth: '1200px',
+    marginBottom: '3.5rem'
   }
 
   const titleStyle = {
     fontSize: '1.5rem',
     fontWeight: 700,
     marginBottom: '0.5rem',
-    fontFamily: '"Ubuntu", sans-serif',
+    fontFamily: '"Poppins", sans-serif'
   }
 
   const subtitleStyle = {
     fontSize: '1rem',
     fontWeight: 400,
-    fontFamily: '"Ubuntu", sans-serif',
+    fontFamily: '"Ubuntu", sans-serif'
   }
 
   const footerTitleStyle = {
-    marginBottom: '1.5rem',
-    textAlign: 'center',
+    marginLeft: 200
   }
 
   const socialContainerStyle = {
     display: 'flex',
-    justifyContent: 'center',
     alignItems: 'center',
     gap: '2rem',
-    marginBottom: '1.5rem',
+    marginRight: 620
   }
 
   const socialLinkStyle = {
     color: '#FFFFFF',
     fontSize: '1.5rem',
     textDecoration: 'none',
+    transition: 'color 0.3s ease',
+  }
+
+  const socialLinkHoverStyle = {
+    color: '#FBFBFE'
   }
 
   const footerCopyStyle = {
     fontSize: '0.875rem',
     fontWeight: 400,
     color: '#FFFFFF',
-    fontFamily: '"Ubuntu", sans-serif',
-    textAlign: 'center',
+    fontFamily: '"Ubuntu", sans-serif'
   }
 
   return (
@@ -80,6 +78,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             style={socialLinkStyle}
+            onMouseEnter={(e) => e.currentTarget.style.color = socialLinkHoverStyle.color}
+            onMouseLeave={(e) => e.currentTarget.style.color = socialLinkStyle.color}
           >
             <FaLinkedinIn />
           </a>
@@ -88,6 +88,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             style={socialLinkStyle}
+            onMouseEnter={(e) => e.currentTarget.style.color = socialLinkHoverStyle.color}
+            onMouseLeave={(e) => e.currentTarget.style.color = socialLinkStyle.color}
           >
             <FaGithub />
           </a>
