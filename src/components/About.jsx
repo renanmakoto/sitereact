@@ -20,14 +20,6 @@ const About = () => {
     color: '#111827',
   }
 
-  const subtitleStyle = {
-    fontSize: '1.35rem',
-    fontWeight: 400,
-    marginBottom: '1.5rem',
-    fontFamily: '"Ubuntu", sans-serif',
-    color: '#6B7280',
-  }
-
   const descriptionStyle = {
     fontSize: '1.1rem',
     fontWeight: 300,
