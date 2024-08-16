@@ -20,7 +20,7 @@ const NavMenu = () => {
     position: 'fixed',
     left: 0,
     width: '100%',
-    height: '7.5rem',
+    height: '10.5rem',
     top: '0rem',
     backgroundColor: '#FBFBFE',
     zIndex: 1000,
