@@ -19,14 +19,6 @@ const Skills = () => {
     fontFamily: '"Ubuntu", sans-serif',
   }
 
-  const subtitleStyle = {
-    fontSize: '1.35rem',
-    fontWeight: 400,
-    color: '#6B7280',
-    marginBottom: '2rem',
-    fontFamily: '"Ubuntu", sans-serif',
-  }
-
   const skillsContainerStyle = {
     display: 'flex',
     flexWrap: 'wrap',
@@ -50,7 +42,6 @@ const Skills = () => {
   return (
     <section style={sectionStyle}>
       <h2 style={titleStyle}>Skills</h2>
-      <span style={subtitleStyle}>My Technical Skills</span>
       <div style={skillsContainerStyle}>
         <div style={skillItemStyle}>JavaScript</div>
         <div style={skillItemStyle}>TypeScript</div>

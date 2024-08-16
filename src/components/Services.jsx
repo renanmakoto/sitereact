@@ -25,14 +25,6 @@ const Services = () => {
     fontFamily: '"Ubuntu", sans-serif',
   }
 
-  const subtitleStyle = {
-    fontSize: '1.35rem',
-    fontWeight: 400,
-    color: '#6B7280',
-    marginBottom: '2rem',
-    fontFamily: '"Ubuntu", sans-serif',
-  }
-
   const servicesContainerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -119,7 +111,6 @@ const Services = () => {
   return (
     <section style={sectionStyle}>
       <h2 style={titleStyle}>Services</h2>
-      <span style={subtitleStyle}>What I offer</span>
       <div style={servicesContainerStyle}>
         <div
           style={serviceCardStyle}
