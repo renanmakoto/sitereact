@@ -116,7 +116,7 @@ const Footer = () => {
         </div>
       </div>
       <p style={footerCopyStyle}>
-        By Renan Makoto - dotExtension
+          dotExtension
       </p>
       <p style={footerCopyStyle}>
         Extending to every file type.
