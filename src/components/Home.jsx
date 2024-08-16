@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { FaRegEnvelope } from 'react-icons/fa'
 
 const Home = () => {
@@ -49,10 +48,18 @@ const Home = () => {
     alignItems: 'center',
     gap: '0.5rem',
     fontFamily: '"Ubuntu", sans-serif',
+    cursor: 'pointer',
   }
 
   const iconStyle = {
     fontSize: '1.25rem',
+  }
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
   }
 
   return (
@@ -62,9 +69,12 @@ const Home = () => {
       <p style={descriptionStyle}>
         Passionate JavaScript | Node.js developer.
       </p>
-      <a href="#contact" style={buttonStyle}>
+      <span
+        style={buttonStyle}
+        onClick={() => scrollToSection('contact')}
+      >
         Contact Me <FaRegEnvelope style={iconStyle} />
-      </a>
+      </span>
     </section>
   )
 }
