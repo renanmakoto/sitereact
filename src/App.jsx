@@ -1,19 +1,19 @@
-import React from 'react'
-import Header from './components/Header'
-import Home from './components/Home'
-import About from './components/About'
-import Skills from './components/Skills'
-import Services from './components/Services'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import ScrollUp from './components/ScrollUp'
-
-import './GlobalStyles.css'
+import React from 'react';
+import NavLogo from './components/NavLogo';
+import NavMenu from './components/NavMenu';
+import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import ScrollUp from './components/ScrollUp';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <NavLogo />
+      <NavMenu />
       <main>
         <section id="home">
           <Home />
@@ -34,7 +34,7 @@ function App() {
       <Footer />
       <ScrollUp />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
