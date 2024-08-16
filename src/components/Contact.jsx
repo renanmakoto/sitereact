@@ -18,7 +18,7 @@ const Contact = () => {
     fontSize: '1.5rem',
     fontWeight: 400,
     color: '#111827',
-    marginBottom: '0.5rem',
+    marginBottom: '3.5rem',
     fontFamily: '"Ubuntu", sans-serif',
   }
 
