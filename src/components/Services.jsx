@@ -84,10 +84,10 @@ const Services = () => {
     padding: '1.5rem',
     borderRadius: '0.5rem',
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
-    zIndex: 1001,
+    zIndex: 2000, 
     animation: isModalOpen ? 'fadeIn 0.3s ease' : 'fadeOut 0.3s ease',
-    width: '400px',
-    height: '250px',
+    width: '300px',
+    height: '280px',
   }
 
   const overlayStyle = {
@@ -98,8 +98,9 @@ const Services = () => {
     width: '100%',
     height: '100%',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    zIndex: 1000,
+    zIndex: 1999,
   }
+
 
   const skillName = {
     fontFamily: '"Ubuntu", sans-serif',
