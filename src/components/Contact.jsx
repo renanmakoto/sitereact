@@ -15,18 +15,10 @@ const Contact = () => {
   }
 
   const titleStyle = {
-    fontSize: '2rem',
+    fontSize: '1rem',
     fontWeight: 400,
     color: '#111827',
     marginBottom: '0.5rem',
-    fontFamily: '"Ubuntu", sans-serif',
-  }
-
-  const subtitleStyle = {
-    fontSize: '1.35rem',
-    fontWeight: 400,
-    color: '#6B7280',
-    marginBottom: '3rem',
     fontFamily: '"Ubuntu", sans-serif',
   }
 
@@ -74,7 +66,6 @@ const Contact = () => {
   return (
     <section style={sectionStyle}>
       <h2 style={titleStyle}>Contact me</h2>
-      <span style={subtitleStyle}>Get in touch</span>
       <div style={contactContainerStyle}>
         <div style={contactInfoStyle}>
           <MdOutlineEmail style={iconStyle} />
