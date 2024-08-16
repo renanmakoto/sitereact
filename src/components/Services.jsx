@@ -18,7 +18,7 @@ const Services = () => {
   }
 
   const titleStyle = {
-    fontSize: '2.2rem',
+    fontSize: '1.5rem',
     fontWeight: 400,
     color: '#111827',
     marginBottom: '0.5rem',
