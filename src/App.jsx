@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import NavLogo from './components/NavLogo';
 import NavMenu from './components/NavMenu';
 import Home from './components/Home';
