@@ -1,5 +1,5 @@
 import React from 'react'
-import NavLogo from './components/NavLogo';
+import NavLogo from './components/NavLogo'
 import NavMenu from './components/NavMenu';
 import Home from './components/Home';
 import About from './components/About';
