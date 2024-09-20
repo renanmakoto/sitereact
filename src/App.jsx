@@ -34,7 +34,7 @@ function App() {
       <Footer />
       <ScrollUp />
     </div>
-  );
+  )
 }
 
 export default App;
