@@ -28,7 +28,7 @@ const Footer = () => {
     fontWeight: 700,
     marginBottom: '0.5rem',
     fontFamily: '"Ubuntu", sans-serif',
-    textAlign: 'left',  // Align text to the left for desktop
+    textAlign: 'left',
   }
 
   const subtitleStyle = {
