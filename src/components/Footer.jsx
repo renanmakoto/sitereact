@@ -39,7 +39,7 @@ const Footer = () => {
   }
 
   const footerTitleStyle = {
-    marginLeft: window.innerWidth > 768 ? 0 : 200, // Move to the left for desktop
+    marginLeft: window.innerWidth > 768 ? 0 : 200,
   }
 
   const socialContainerStyle = {
