@@ -35,7 +35,7 @@ const Footer = () => {
     fontSize: '1rem',
     fontWeight: 400,
     fontFamily: '"Ubuntu", sans-serif',
-    textAlign: 'left',  // Align text to the left for desktop
+    textAlign: 'left',
   }
 
   const footerTitleStyle = {
