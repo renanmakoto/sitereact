@@ -46,7 +46,7 @@ const Footer = () => {
     display: 'flex',
     alignItems: 'center',
     gap: '2rem',
-    marginRight: window.innerWidth > 768 ? 0 : 620, // Move to the right for desktop
+    marginRight: window.innerWidth > 768 ? 0 : 620,
   }
 
   const socialLinkStyle = {
