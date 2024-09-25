@@ -3,7 +3,7 @@ import React from 'react'
 import { MdOutlineEmail } from "react-icons/md"
 import { FaLinkedinIn } from "react-icons/fa"
 
-const Contact = () => {
+export default function Contact() {
   const sectionStyle = {
     display: 'flex',
     flexDirection: 'column',
