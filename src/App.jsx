@@ -9,7 +9,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ScrollUp from './components/ScrollUp'
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <NavLogo />
@@ -36,5 +36,3 @@ function App() {
     </div>
   )
 }
-
-export default App
