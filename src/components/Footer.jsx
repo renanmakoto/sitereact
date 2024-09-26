@@ -1,8 +1,48 @@
 import React from 'react'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
-const Footer = () => {
-  const footerStyle = {
+export default function Footer() {
+  return (
+    <footer style={footerStyle}>
+      <div style={{ ...footerContainerStyle, ...(window.innerWidth <= 768 ? mobileContainerStyle : {}) }}>
+        <div style={{ ...footerTitleStyle, ...(window.innerWidth <= 768 ? mobileTitleStyle : {}) }}>
+          <h1 style={titleStyle}>Renan Makoto</h1>
+          <span style={subtitleStyle}>Software Developer</span>
+        </div>
+        <div style={{ ...socialContainerStyle, ...(window.innerWidth <= 768 ? mobileSocialContainerStyle : {}) }}>
+          <a
+            href="https://www.linkedin.com/in/renanmakoto/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={socialLinkStyle}
+            onMouseEnter={(e) => e.currentTarget.style.color = socialLinkHoverStyle.color}
+            onMouseLeave={(e) => e.currentTarget.style.color = socialLinkStyle.color}
+          >
+            <FaLinkedinIn />
+          </a>
+          <a
+            href="https://github.com/renanmakoto"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={socialLinkStyle}
+            onMouseEnter={(e) => e.currentTarget.style.color = socialLinkHoverStyle.color}
+            onMouseLeave={(e) => e.currentTarget.style.color = socialLinkStyle.color}
+          >
+            <FaGithub />
+          </a>
+        </div>
+      </div>
+      <p style={footerCopyStyle}>
+          dotExtension
+      </p>
+      <p style={footerCopyStyle}>
+        Extending to every file type.
+      </p>
+    </footer>
+  )
+}
+
+const footerStyle = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -84,43 +124,3 @@ const Footer = () => {
     justifyContent: 'center',
     marginBottom: '1.5rem',
   }
-
-  return (
-    <footer style={footerStyle}>
-      <div style={{ ...footerContainerStyle, ...(window.innerWidth <= 768 ? mobileContainerStyle : {}) }}>
-        <div style={{ ...footerTitleStyle, ...(window.innerWidth <= 768 ? mobileTitleStyle : {}) }}>
-          <h1 style={titleStyle}>Renan Makoto</h1>
-          <span style={subtitleStyle}>Software Developer</span>
-        </div>
-        <div style={{ ...socialContainerStyle, ...(window.innerWidth <= 768 ? mobileSocialContainerStyle : {}) }}>
-          <a
-            href="https://www.linkedin.com/in/renanmakoto/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={socialLinkStyle}
-            onMouseEnter={(e) => e.currentTarget.style.color = socialLinkHoverStyle.color}
-            onMouseLeave={(e) => e.currentTarget.style.color = socialLinkStyle.color}
-          >
-            <FaLinkedinIn />
-          </a>
-          <a
-            href="https://github.com/renanmakoto"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={socialLinkStyle}
-            onMouseEnter={(e) => e.currentTarget.style.color = socialLinkHoverStyle.color}
-            onMouseLeave={(e) => e.currentTarget.style.color = socialLinkStyle.color}
-          >
-            <FaGithub />
-          </a>
-        </div>
-      </div>
-      <p style={footerCopyStyle}>
-          dotExtension
-      </p>
-      <p style={footerCopyStyle}>
-        Extending to every file type.
-      </p>
-    </footer>
-  )
-}
