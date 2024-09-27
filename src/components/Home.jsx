@@ -2,6 +2,23 @@ import React from 'react'
 import { FaRegEnvelope } from 'react-icons/fa'
 
 export default function Home() {
+  return (
+    <section style={sectionStyle}>
+      <h1 style={titleStyle}>Hi, I'm Renan Makoto</h1>
+      <h2 style={subtitleStyle}>JavaScript Developer</h2>
+      <p style={descriptionStyle}>
+        Passionate JavaScript | Node.js developer.
+      </p>
+      <span
+        style={buttonStyle}
+        onClick={() => scrollToSection('contact')}
+      >
+        Contact Me <FaRegEnvelope style={iconStyle} />
+      </span>
+    </section>
+  )
+}
+
   const sectionStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -61,22 +78,3 @@ export default function Home() {
       section.scrollIntoView({ behavior: 'smooth' })
     }
   }
-
-  return (
-    <section style={sectionStyle}>
-      <h1 style={titleStyle}>Hi, I'm Renan Makoto</h1>
-      <h2 style={subtitleStyle}>JavaScript Developer</h2>
-      <p style={descriptionStyle}>
-        Passionate JavaScript | Node.js developer.
-      </p>
-      <span
-        style={buttonStyle}
-        onClick={() => scrollToSection('contact')}
-      >
-        Contact Me <FaRegEnvelope style={iconStyle} />
-      </span>
-    </section>
-  )
-}
-
-export default Home
