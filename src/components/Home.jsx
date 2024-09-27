@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaRegEnvelope } from 'react-icons/fa'
 
-const Home = () => {
+export default function Home() {
   const sectionStyle = {
     display: 'flex',
     flexDirection: 'column',
