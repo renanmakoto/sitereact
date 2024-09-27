@@ -17,7 +17,6 @@ export default function Home() {
       </span>
     </section>
   )
-}
 
   const sectionStyle = {
     display: 'flex',
@@ -78,3 +77,4 @@ export default function Home() {
       section.scrollIntoView({ behavior: 'smooth' })
     }
   }
+}
