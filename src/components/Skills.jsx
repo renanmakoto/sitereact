@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Skills = () => {
+export default function Skill() {
   const sectionStyle = {
     display: 'flex',
     flexDirection: 'column',
