@@ -1,6 +1,23 @@
 import React from 'react'
 
 export default function Skill() {
+  
+  return (
+    <section style={sectionStyle}>
+      <h2 style={titleStyle}>Skills</h2>
+      <div style={skillsContainerStyle}>
+        <div style={skillItemStyle}>JavaScript</div>
+        <div style={skillItemStyle}>TypeScript</div>
+        <div style={skillItemStyle}>Node JS</div>
+        <div style={skillItemStyle}>React</div>
+        <div style={skillItemStyle}>React Native</div>
+        <div style={skillItemStyle}>Express JS</div>
+        <div style={skillItemStyle}>MongoDB</div>
+        <div style={skillItemStyle}>CSS</div>
+        <div style={skillItemStyle}>HTML</div>
+      </div>
+    </section>
+
   const sectionStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -38,21 +55,5 @@ export default function Skill() {
     textAlign: 'center',
     cursor: 'default',
   }
-
-  return (
-    <section style={sectionStyle}>
-      <h2 style={titleStyle}>Skills</h2>
-      <div style={skillsContainerStyle}>
-        <div style={skillItemStyle}>JavaScript</div>
-        <div style={skillItemStyle}>TypeScript</div>
-        <div style={skillItemStyle}>Node JS</div>
-        <div style={skillItemStyle}>React</div>
-        <div style={skillItemStyle}>React Native</div>
-        <div style={skillItemStyle}>Express JS</div>
-        <div style={skillItemStyle}>MongoDB</div>
-        <div style={skillItemStyle}>CSS</div>
-        <div style={skillItemStyle}>HTML</div>
-      </div>
-    </section>
   )
 }
