@@ -43,5 +43,3 @@ const NavLogo = () => {
     </div>
   )
 }
-
-export default NavLogo
