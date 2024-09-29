@@ -1,6 +1,26 @@
 import React from 'react'
 
 export default function NavLogo() {
+  
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
+  return (
+    <div>
+      <span
+        style={navLogoStyle}
+        onClick={() => scrollToSection('home')}
+        onMouseEnter={(e) => e.target.style.color = navLinkHoverStyle.color}
+        onMouseLeave={(e) => e.target.style.color = '#111827'}
+      >
+        dotExtension
+      </span>
+    </div>
+  )
   const navLogoStyle = {
     fontSize: '1.1rem',
     color: '#111827',
@@ -22,24 +42,4 @@ export default function NavLogo() {
   const navLinkHoverStyle = {
     color: '#00ADA2',
   }
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId)
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
-  return (
-    <div>
-      <span
-        style={navLogoStyle}
-        onClick={() => scrollToSection('home')}
-        onMouseEnter={(e) => e.target.style.color = navLinkHoverStyle.color}
-        onMouseLeave={(e) => e.target.style.color = '#111827'}
-      >
-        dotExtension
-      </span>
-    </div>
-  )
 }
