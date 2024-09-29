@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NavLogo = () => {
+export default function NavLogo() {
   const navLogoStyle = {
     fontSize: '1.1rem',
     color: '#111827',
