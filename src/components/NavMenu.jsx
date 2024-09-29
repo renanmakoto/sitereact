@@ -96,5 +96,3 @@ const NavMenu = () => {
     </div>
   )
 }
-
-export default NavMenu
