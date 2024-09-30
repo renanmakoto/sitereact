@@ -46,5 +46,3 @@ const ScrollUp = () => {
     </div>
   )
 }
-
-export default ScrollUp
