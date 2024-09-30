@@ -22,7 +22,14 @@ export default function ScrollUp() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  const scrollUpStyle = {
+
+
+  return (
+    <div style={scrollUpStyle} onClick={scrollTop}>
+      <FaArrowUp style={iconStyle} />
+    </div>
+  )
+    const scrollUpStyle = {
     position: 'fixed',
     right: '1rem',
     bottom: '1rem',
@@ -40,10 +47,4 @@ export default function ScrollUp() {
     color: '#fff',
     fontSize: '1rem'
   }
-
-  return (
-    <div style={scrollUpStyle} onClick={scrollTop}>
-      <FaArrowUp style={iconStyle} />
-    </div>
-  )
 }
