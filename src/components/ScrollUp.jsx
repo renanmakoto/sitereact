@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { FaArrowUp } from 'react-icons/fa'
 
-const ScrollUp = () => {
+
+export default function ScrollUp() {
   const [showScroll, setShowScroll] = useState(false)
 
   useEffect(() => {
