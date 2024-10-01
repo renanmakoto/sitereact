@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 
 import { FaCheckCircle } from 'react-icons/fa'
 
-
-const Services = () => {
+export default function Services() {
   const [isModalOpen, setModalOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('')
 
