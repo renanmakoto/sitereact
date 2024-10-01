@@ -6,11 +6,6 @@ export default function Services() {
   const [isModalOpen, setModalOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('')
 
-
-  const skillName = {
-    fontFamily: '"Ubuntu", sans-serif',
-  }
-
   const closeModal = () => {
     setModalOpen(false)
     setSelectedService('')
@@ -259,6 +254,10 @@ export default function Services() {
     height: '100%',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     zIndex: 1999,
+  }
+  
+  const skillName = {
+    fontFamily: '"Ubuntu", sans-serif',
   }
   )
 }
