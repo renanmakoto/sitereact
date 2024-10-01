@@ -170,94 +170,96 @@ export default function Services() {
         }
       `}</style>
     </section>
-     const sectionStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '6rem 1rem',
-    backgroundColor: '#FBFBFE',
-    textAlign: 'center',
-  }
-
-  const titleStyle = {
-    fontSize: '1.5rem',
-    fontWeight: 400,
-    color: '#111827',
-    marginBottom: '3.5rem',
-    fontFamily: '"Ubuntu", sans-serif',
-  }
-
-  const servicesContainerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '2rem',
-    flexWrap: 'wrap',
-  }
-
-  const serviceCardStyle = {
-    backgroundColor: '#FFFFFF',
-    padding: '2rem',
-    borderRadius: '0.5rem',
-    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-    textAlign: 'center',
-    width: '250px',
-    transition: 'transform 0.3s ease',
-  }
-
-  const serviceTitleStyle = {
-    fontSize: '1.35rem',
-    fontWeight: 400,
-    color: '#111827',
-    marginBottom: '1.1rem',
-    fontFamily: '"Ubuntu", sans-serif',
-  }
-
-  const serviceLinkStyle = {
-    fontSize: '1.2rem',
-    fontWeight: 400,
-    color: '#00ADA2',
-    textDecoration: 'none',
-    fontFamily: '"Ubuntu", sans-serif',
-    display: 'inline-flex',
-    alignItems: 'center',
-    cursor: 'pointer',
-  }
-
-  const arrowStyle = {
-    marginLeft: '0.5rem',
-    transition: 'transform 0.3s ease',
-  }
-
-  const modalStyle = {
-    display: isModalOpen ? 'block' : 'none',
-    position: 'fixed',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    backgroundColor: '#FFFFFF',
-    padding: '1.5rem',
-    borderRadius: '0.5rem',
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
-    zIndex: 2000, 
-    animation: isModalOpen ? 'fadeIn 0.3s ease' : 'fadeOut 0.3s ease',
-    width: '300px',
-    height: '280px',
-  }
-
-  const overlayStyle = {
-    display: isModalOpen ? 'block' : 'none',
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    zIndex: 1999,
-  }
+    
+      const sectionStyle = {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '6rem 1rem',
+      backgroundColor: '#FBFBFE',
+      textAlign: 'center',
+    }
   
-  const skillName = {
-    fontFamily: '"Ubuntu", sans-serif',
-  }
+    const titleStyle = {
+      fontSize: '1.5rem',
+      fontWeight: 400,
+      color: '#111827',
+      marginBottom: '3.5rem',
+      fontFamily: '"Ubuntu", sans-serif',
+    }
+  
+    const servicesContainerStyle = {
+      display: 'flex',
+      justifyContent: 'center',
+      gap: '2rem',
+      flexWrap: 'wrap',
+    }
+  
+    const serviceCardStyle = {
+      backgroundColor: '#FFFFFF',
+      padding: '2rem',
+      borderRadius: '0.5rem',
+      boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+      textAlign: 'center',
+      width: '250px',
+      transition: 'transform 0.3s ease',
+    }
+  
+    const serviceTitleStyle = {
+      fontSize: '1.35rem',
+      fontWeight: 400,
+      color: '#111827',
+      marginBottom: '1.1rem',
+      fontFamily: '"Ubuntu", sans-serif',
+    }
+  
+    const serviceLinkStyle = {
+      fontSize: '1.2rem',
+      fontWeight: 400,
+      color: '#00ADA2',
+      textDecoration: 'none',
+      fontFamily: '"Ubuntu", sans-serif',
+      display: 'inline-flex',
+      alignItems: 'center',
+      cursor: 'pointer',
+    }
+  
+    const arrowStyle = {
+      marginLeft: '0.5rem',
+      transition: 'transform 0.3s ease',
+    }
+  
+    const modalStyle = {
+      display: isModalOpen ? 'block' : 'none',
+      position: 'fixed',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      backgroundColor: '#FFFFFF',
+      padding: '1.5rem',
+      borderRadius: '0.5rem',
+      boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
+      zIndex: 2000, 
+      animation: isModalOpen ? 'fadeIn 0.3s ease' : 'fadeOut 0.3s ease',
+      width: '300px',
+      height: '280px',
+    }
+  
+    const overlayStyle = {
+      display: isModalOpen ? 'block' : 'none',
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      zIndex: 1999,
+    }
+    
+    const skillName = {
+      fontFamily: '"Ubuntu", sans-serif',
+    }
+  
   )
 }
